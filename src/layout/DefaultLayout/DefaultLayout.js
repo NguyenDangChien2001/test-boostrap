@@ -2,7 +2,7 @@ import Header from "../../component/Header";
 
 function DefaultLayout({ children }) {
   return (
-    <div>
+    <div className="bg-dark">
       <Header />
       <div>{children}</div>
     </div>

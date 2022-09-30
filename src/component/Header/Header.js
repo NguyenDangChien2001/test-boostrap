@@ -14,11 +14,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { publicRoutes } from "../../routes";
-import images from "../../asset";
+import { images } from "../../asset";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" sticky="top">
+    <Navbar bg="dark" variant="dark" fixed="top">
       <Container fluid="md">
         <Navbar.Brand as={Link} to="/">
           <img src={images.logoNeFlix} alt="logo" width={100} />
