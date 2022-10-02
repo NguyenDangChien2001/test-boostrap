@@ -1,5 +1,7 @@
+import ModalBox from "../../component/ModalBox";
+
 function MyList() {
-  return <div>MyList</div>;
+  return <div></div>;
 }
 
 export default MyList;

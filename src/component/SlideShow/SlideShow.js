@@ -1,14 +1,15 @@
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
+import ModalBox from "../ModalBox";
 import CustomButton from "../CustomButton";
 
 function SlideShow(props) {
   return (
     <div className="img-fluid position-relative">
       <video autoPlay muted className="w-100">
-        <source src={props.video} />
+        <source src={props.video} type="video/mp4" />
       </video>
       <Container className="container-md">
         <div
@@ -25,10 +26,12 @@ function SlideShow(props) {
                 <FontAwesomeIcon icon={faPlay} />
                 <span className="ms-3">Play</span>
               </CustomButton>
-              <CustomButton color="dark">
-                <FontAwesomeIcon icon={faExclamationCircle} />
-                <span className="ms-3">Orther Information</span>
-              </CustomButton>
+              <ModalBox
+                video={props.video}
+                image={props.image}
+                description={props.text}
+                title={props.title}
+              />
             </div>
           </div>
         </div>
