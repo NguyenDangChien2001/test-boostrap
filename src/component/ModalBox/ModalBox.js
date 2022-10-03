@@ -22,7 +22,7 @@ function ModalBox(props) {
       </CustomButton>
 
       <Modal show={show} onHide={handleClose} size="lg">
-        <Modal.Header closeButton className="bg-dark"></Modal.Header>
+        <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="bg-black px-0">
           <div className="position-relative">
             <video autoPlay muted className="w-100">
@@ -86,14 +86,6 @@ function ModalBox(props) {
             </div>
           </Container>
         </Modal.Body>
-        <Modal.Footer className="bg-dark">
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

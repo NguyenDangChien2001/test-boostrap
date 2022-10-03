@@ -7,7 +7,11 @@ function CustomCard(props) {
   const [hide, setHide] = useState(true);
 
   return (
-    <div onMouseOver={() => setHide(false)} onMouseLeave={() => setHide(true)}>
+    <div
+      onMouseOver={() => setHide(false)}
+      onMouseLeave={() => setHide(true)}
+      onClick={() => setHide(true)}
+    >
       <ModalBox
         video={props.data.trailer}
         image={props.data.logo}
