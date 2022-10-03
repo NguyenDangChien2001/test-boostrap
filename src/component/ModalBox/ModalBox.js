@@ -55,12 +55,24 @@ function ModalBox(props) {
                 {props.description}
               </Col>
               <Col sm={4} className="text-light">
-                <span>dien vien:</span>
-                <p>abc asdas adasd adsad asdasd adasd adas</p>
-                <span>dien vien:</span>
-                <p>abc asdas adasd adsad asdasd adasd adas</p>
-                <span>dien vien:</span>
-                <p>abc asdas adasd adsad asdasd adasd adas</p>
+                <span>Cast:</span>
+                <p>
+                  {props.cast.map((eachCast, index) => (
+                    <span key={index}>{eachCast}</span>
+                  ))}
+                </p>
+                <span>Genres:</span>
+                <p>
+                  {props.genres.map((eachCast, index) => (
+                    <span key={index}>{eachCast}</span>
+                  ))}
+                </p>
+                <span>This Show Is:</span>
+                <p>
+                  {props.thisShowIs.map((eachCast, index) => (
+                    <span key={index}>{eachCast}</span>
+                  ))}
+                </p>
               </Col>
             </Row>
             <Row style={{ fontSize: "2rem" }}>

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function CustomCarousel(props) {
-  const carouselImages = props.carouselImages;
+  const datas = props.data;
 
   return (
     <div className="mb-5">
@@ -14,13 +14,13 @@ function CustomCarousel(props) {
       </Container>
 
       <Carousel variant="light" pause="hover" indicators={false}>
-        {carouselImages.map((carouselImage, index) => (
+        {datas.map((data, index) => (
           <Carousel.Item key={index}>
             <Container fluid="md" className="d-flex">
               <Row>
-                {carouselImage.map((image, index) => (
+                {data.map((eachData, index) => (
                   <Col xs={6} md={4} key={index}>
-                    <CustomCard img={image} />
+                    <CustomCard data={eachData} />
                   </Col>
                 ))}
               </Row>

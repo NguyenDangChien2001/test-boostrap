@@ -31,6 +31,9 @@ function SlideShow(props) {
                 image={props.image}
                 description={props.text}
                 title={props.title}
+                cast={["Nguyen Dang Chien"]}
+                genres={["Nguyen Dang Chien"]}
+                thisShowIs={["Nguyen Dang Chien"]}
               >
                 <FontAwesomeIcon icon={faExclamationCircle} />
                 <span className="ms-3">Orther Information</span>
