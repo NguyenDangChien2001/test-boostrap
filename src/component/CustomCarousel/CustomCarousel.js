@@ -19,7 +19,7 @@ function CustomCarousel(props) {
             <Container fluid="md" className="d-flex">
               <Row>
                 {carouselImage.map((image, index) => (
-                  <Col key={index}>
+                  <Col xs={6} md={4} key={index}>
                     <CustomCard img={image} />
                   </Col>
                 ))}

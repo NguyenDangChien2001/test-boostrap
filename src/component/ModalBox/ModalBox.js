@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -18,8 +18,7 @@ function ModalBox(props) {
   return (
     <>
       <CustomButton color="dark" onClick={handleShow}>
-        <FontAwesomeIcon icon={faExclamationCircle} />
-        <span className="ms-3">Orther Information</span>
+        {props.children}
       </CustomButton>
 
       <Modal show={show} onHide={handleClose} size="lg">

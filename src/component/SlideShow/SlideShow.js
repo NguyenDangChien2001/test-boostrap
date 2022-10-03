@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faExclamationCircle } from "@fortawesome/free-solid-svg-icons";
 
 import ModalBox from "../ModalBox";
 import CustomButton from "../CustomButton";
@@ -31,7 +31,10 @@ function SlideShow(props) {
                 image={props.image}
                 description={props.text}
                 title={props.title}
-              />
+              >
+                <FontAwesomeIcon icon={faExclamationCircle} />
+                <span className="ms-3">Orther Information</span>
+              </ModalBox>
             </div>
           </div>
         </div>
