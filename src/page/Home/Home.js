@@ -14,9 +14,8 @@ function Home() {
     [
       images.CyberPunk,
       images.CuocGiaiCuuHangThaiLan,
-      images.Dahmer, 
+      images.Dahmer,
       images.KomiKoTheGiaoTiep,
-      images.ThanhMaTuy,
     ],
     [
       images.CyberPunk,
