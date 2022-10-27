@@ -29,9 +29,9 @@ function ModalBox(props) {
               height="450"
               src="https://www.youtube.com/embed/vRunUkdkK8s?autoplay=1&mute=1"
               title="ATHENA directed by Romain Gavras | Official Trailer | Netflix"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
 
             <div
@@ -61,7 +61,7 @@ function ModalBox(props) {
               </Col>
               <Col sm={4} className="text-light">
                 <span>Cast:</span>
-                <p>
+                {/* <p>
                   {props.cast.map((eachCast, index) => (
                     <span key={index}>{eachCast}</span>
                   ))}
@@ -77,7 +77,7 @@ function ModalBox(props) {
                   {props.thisShowIs.map((eachCast, index) => (
                     <span key={index}>{eachCast}</span>
                   ))}
-                </p>
+                </p> */}
               </Col>
             </Row>
             <Row style={{ fontSize: "2rem" }}>

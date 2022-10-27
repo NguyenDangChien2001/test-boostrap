@@ -8,9 +8,15 @@ import CustomButton from "../CustomButton";
 function SlideShow(props) {
   return (
     <div className="img-fluid position-relative">
-      <video autoPlay muted className="w-100">
-        <source src={props.video} type="video/mp4" />
-      </video>
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.youtube.com/embed/vRunUkdkK8s?autoplay=1&mute=1"
+        title="ATHENA directed by Romain Gavras | Official Trailer | Netflix"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       <Container className="container-md">
         <div
           className="position-absolute top-0 d-flex align-items-center h-100"
