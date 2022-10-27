@@ -15,8 +15,9 @@ import {
 
 import { publicRoutes } from "../../routes";
 import { images } from "../../asset";
+import SearchBox from "../SearchBox/SearchBox";
 
-function Header() {
+function Header(props) {
   return (
     <Navbar bg="dark" variant="dark" fixed="top">
       <Container fluid="md">
@@ -51,14 +52,10 @@ function Header() {
         </Nav>
 
         <Nav className="ms-auto">
-          <OverlayTrigger
-            placement="bottom"
-            overlay={<Tooltip id={`tooltip-bottom`}>Tooltip on</Tooltip>}
-          >
-            <Button variant="dark">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </Button>
-          </OverlayTrigger>
+          <SearchBox data={props.data}>
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </SearchBox>
+
           <OverlayTrigger
             placement="bottom"
             overlay={<Tooltip id={`tooltip-bottom`}>Tooltip on</Tooltip>}

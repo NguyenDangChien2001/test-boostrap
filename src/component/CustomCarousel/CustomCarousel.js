@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Carousel from "react-bootstrap/Carousel";
 import CustomCard from "../CustomCard/CustomCard";
 import { Container } from "react-bootstrap";
@@ -6,6 +8,7 @@ import Col from "react-bootstrap/Col";
 
 function CustomCarousel(props) {
   const datas = props.data;
+  console.log(datas);
 
   return (
     <div className="mb-5">

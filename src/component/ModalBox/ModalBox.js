@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -25,9 +24,15 @@ function ModalBox(props) {
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body className="bg-black px-0">
           <div className="position-relative">
-            <video autoPlay muted className="w-100">
-              <source src={props.video} />
-            </video>
+            <iframe
+              width="100%"
+              height="450"
+              src="https://www.youtube.com/embed/vRunUkdkK8s?autoplay=1&mute=1"
+              title="ATHENA directed by Romain Gavras | Official Trailer | Netflix"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
 
             <div
               className="position-absolute top-0 d-flex align-items-end h-100"
@@ -56,7 +61,7 @@ function ModalBox(props) {
               </Col>
               <Col sm={4} className="text-light">
                 <span>Cast:</span>
-                <p>
+                {/* <p>
                   {props.cast.map((eachCast, index) => (
                     <span key={index}>{eachCast}</span>
                   ))}
@@ -72,7 +77,7 @@ function ModalBox(props) {
                   {props.thisShowIs.map((eachCast, index) => (
                     <span key={index}>{eachCast}</span>
                   ))}
-                </p>
+                </p> */}
               </Col>
             </Row>
             <Row style={{ fontSize: "2rem" }}>
